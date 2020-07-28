@@ -47,14 +47,13 @@ namespace APItest
 
         public static void SqlBulkCopy(List<Enderecos> Colecao)
         {
-
             if (Colecao.Count == 0) return;
 
             DataTable tabela = Criar_Estrutura_Tabela();
 
-            foreach (var socEmpresa in Colecao)
+            foreach (var endereco in Colecao)
             {
-                DataRow linha = Preencher_Linha(tabela, socEmpresa);
+                DataRow linha = Preencher_Linha(tabela, endereco);
 
                 tabela.Rows.Add(linha);
             }
