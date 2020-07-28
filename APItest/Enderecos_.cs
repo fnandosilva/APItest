@@ -21,7 +21,7 @@ namespace APItest
         {
             List<Enderecos> retorno = new List<Enderecos>();
 
-            System.Net.WebClient webClient = new System.Net.WebClient();
+            WebClient webClient = new WebClient();
 
             bool obteveRetorno = false;
             string urlResponse = "";
